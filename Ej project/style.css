@@ -1,0 +1,208 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300&family=Oleo+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: ivy;
+    src: url(./ivypresto.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#main {
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 999;
+    /* background-color:#0e0e0e; */
+}
+
+#page1 {
+    min-height: 100vh;
+    background-color: #0e0e0e;
+    position: fixed;
+    width: 100%;
+    padding-top: 75px;
+}
+
+#nav {
+    height: 80px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    text-align: center;
+    padding: 0 58px;
+    color: #050505;
+    /* letter-spacing: 1.5px;
+       word-spacing: 2px; */
+    z-index: 99;
+    position: fixed;
+    top: 50px;
+    justify-content: space-between;
+}
+
+#nav h5 {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+#menu {
+    height: 12px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 8px 0; */
+    align-items: center;
+    /* background-color: blue; */
+}
+#page1>p{
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    color: #fff;
+}
+
+#line1 {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+
+#line2 {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+
+#page1>h1{
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 41vh;
+    letter-spacing: 6px;
+    line-height: 21vh;
+    margin-top: 80px;
+
+    font-family: 'ivy';
+    font-weight: 100;
+    align-items: center;
+}
+
+#page1>h2{
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 39.5vh;
+    letter-spacing: 7px;
+    line-height: 14vh;
+    margin-top: 130px;
+    /* margin-right: 20px; */
+    font-family: 'inter';
+    font-weight: 500;
+    align-items: center;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /* padding-top: 110px; */
+    padding-top: 90vh;
+}
+#page2 #img {
+    height: 100vh;
+    width: 410px;
+    position: relative;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://uploads-ssl.webflow.com/64288ea7be3b591ebd282598/643567645e1dcede0434aa3c_sdad-p-2000.jpg);
+    /* align-items: center; */
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 110px;
+    color: #fff;
+    background-color: #0e0e0e;
+    padding: 110px;
+    font-family: 'ivy';
+
+}
+#page3 p{
+    text-align: center;
+    font-size: 14px;
+padding: 27px;}
+#page3 h1{
+    /* margin-top: 30px; */
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    /* word-spacing: 5px; */
+    font-family: ivy;
+
+}
+#elem{
+    overflow: hidden;
+}
+/* #page3 h1 span{
+    font-family: ivy;
+
+} */
+#page4{
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+   
+    transform: scale(1.5);
+    padding: 20px 0;
+    /* justify-content: center; */
+    background-color: green;
+}
+#page4 h1{
+    text-align: center;
+    margin-top: -20px;
+    font-size: 250px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-family: "Poppins";
+}
+#page4 h3{
+text-align: center;
+    font-size: 200px;
+    font-family: ivy;
+margin-top: -30px;
+    text-transform: uppercase;
+    margin-top: -130px;
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    /* z-index: 999; */
+    background-color: red;
+}

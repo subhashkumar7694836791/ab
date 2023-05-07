@@ -1,0 +1,128 @@
+@import url('https://fonts.cdnfonts.com/css/anurati');
+*
+{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html,body
+{
+height:100%;
+width:100%;
+}
+.container{
+    overflow: hidden;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(84, 79, 79),rgb(147, 76, 76),rgb(48, 23, 20));
+}
+nav{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    color: white;
+    background-color: rgba(3, 3, 3, 0.035);
+}
+.logo{
+    text-transform: u;
+    padding:0 20px;
+   margin: 10px auto;
+   font-size: 25px;
+   font-family: sans-serif;
+   font-weight: 600;
+   
+}
+h2{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 10px 100px;
+}
+.center{
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+.center h1{
+    font-size: 107px;
+    font-weight: 800;
+    font-family: 'Anurati',serif;
+    /* font-family: 'Anurati',sans-serif; */
+    color: white;
+    position: absolute;
+    left: 39%;
+    top: 19%;
+}
+.img1{
+    height: 600px;
+    width: 700px;
+}
+.img2{
+    position: absolute;
+    height: 300px;
+    left: 42%;
+    top: 30%;
+    width: 300px;
+    animation: rotate 7s linear infinite;
+}
+@keyframes rotate {
+    0%{
+transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    /* background-color: yellow; */
+}
+.p{
+    font-size: 17px;
+    color: gray;
+}
+
+footer{
+    height: 200px;
+    width: 100px;
+    display: flex;
+    /* background-color: green; */
+}
+.img3{
+    height: 70px;
+    width: 70px;
+}
+.img4{
+    position: absolute;
+    height: 90px;
+    width: 60px ;
+    top: 70px;
+    rotate: 90deg;
+
+    animation: move 5s forwards infinite;
+    transition: 5s;
+
+}
+/* @keyframes move {
+    0%{
+        height: 90px;
+        width: 60px ;
+
+
+    }
+    30%{
+        height: 90px;
+        width: 60px ;
+        top:70px ;
+        left: 90%;
+
+    }
+    
+} */
