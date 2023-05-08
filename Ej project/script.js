@@ -75,7 +75,7 @@ gsap.to('#page2 #img',{
 // })
 
 gsap.from('#page3 h1',{
-  rotate:4,
+  rotate:5,
   y:100,
   stagger:1,
   scrollTrigger:{
@@ -92,46 +92,34 @@ gsap.from('#page3 h1',{
 
 // page4
 
-// gsap.from('#page4 h1',{
-//   fontSize:'380px',
-//   // scale:1.2,
-//   scrollTrigger:{
-//     trigger:"#page4 h3",
-//     scroller:'#main',
-//     markers:true,
-//     start:'top 20%',
-//     end:'top 10%',
-//     scrub:true,
-    
-
-//   }
-// })
-// gsap.from('#page4 h3',{
-//   fontSize:'200px',
-//   // scale:1.2,
-//   scrollTrigger:{
-//     trigger:"#page4 h3",
-//     scroller:'#main',
-//     markers:true,
-//     start:'top 20%',
-//     end:'top 10%',
-//     scrub:true
-
-//   }
-// })
-gsap.from('#page4',{
-  // fontSize:'380px',
-  scale:2.5,
+gsap.from('#page4 h1',{
+      fontSize:'42vw',
+transform:"translateScale(2.1)",
   scrollTrigger:{
-    trigger:"#page5",
+    trigger:"#page4",
     scroller:'#main',
     markers:true,
-    start:'top 90%',
-    end:'top 80%',
-    scrub:true,
-    
+    start:'top 0%',
+    end:'top -20%',
+    scrub:3,
+    pin:true
     
 
   }
 })
+gsap.from('#page4 h3',{
+    fontSize:'40vw',
+
+  scrollTrigger:{
+    trigger:"#page4",
+    scroller:'#main',
+    markers:true,
+    start:'top 0%',
+    end:'top -20%',
+    scrub:3,
+    pin:true
+
+  }
+})
+
 

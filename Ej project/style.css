@@ -27,7 +27,16 @@ body {
     z-index: 999;
     /* background-color:#0e0e0e; */
 }
+ .circle{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 50%;
 
+ }
 #page1 {
     min-height: 100vh;
     background-color: #0e0e0e;
@@ -174,31 +183,28 @@ padding: 27px;}
 
 } */
 #page4{
-    overflow: hidden;
-    height: 100vh;
+    /* overflow: hidden; */
+   min-height: 100vh;
     width: 100%;
+        background-color: #fff;
+
    
-    transform: scale(1.5);
+    /* transform: scale(1.5);
     padding: 20px 0;
     /* justify-content: center; */
-    background-color: green;
+    /* background-color: green; */ 
 }
 #page4 h1{
     text-align: center;
-    margin-top: -20px;
-    font-size: 250px;
-    font-weight: 600;
-    letter-spacing: 10px;
+    font-size: 29vw;
     text-transform: uppercase;
-    font-family: "Poppins";
+    font-family: 'inter';
 }
 #page4 h3{
 text-align: center;
-    font-size: 200px;
+    font-size: 30vw;
     font-family: ivy;
-margin-top: -30px;
     text-transform: uppercase;
-    margin-top: -130px;
 }
 #page5{
     height: 100vh;
