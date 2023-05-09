@@ -93,7 +93,8 @@ gsap.from('#page3 h1',{
 // page4
 
 gsap.from('#page4 h1',{
-      fontSize:'42vw',
+      // fontSize:'42vw',
+      scale:1.2,
 transform:"translateScale(2.1)",
   scrollTrigger:{
     trigger:"#page4",
@@ -108,7 +109,8 @@ transform:"translateScale(2.1)",
   }
 })
 gsap.from('#page4 h3',{
-    fontSize:'40vw',
+    // fontSize:'40vw',
+    scale:1.2,
 
   scrollTrigger:{
     trigger:"#page4",
@@ -121,5 +123,7 @@ gsap.from('#page4 h3',{
 
   }
 })
+
+
 
 
