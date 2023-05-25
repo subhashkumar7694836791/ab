@@ -1,3 +1,12 @@
+var nav=document.querySelector('nav');
+var ul=document.querySelector('ul');
+window.onscroll = function(){
+    if(window.pageYOffset >= ul.offsetTop){
+        nav.classList.add('sticky')
+    }
+}
+
+
 var video=document.querySelector('video');
 var text=document.querySelector('.page h1');
 var flag=0;

@@ -30,13 +30,48 @@ video{
 }
 .page{
     position: absolute;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
+    
+}
+nav .logo{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: ivy;
+    font-weight: 800;
+}
+nav ul{
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff43;
+    justify-content: space-around;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
 }
+nav a{
+    background-color: #fff;
+    text-decoration: none;
+    color: rgb(0, 1, 1);
+}
+nav li{
+    list-style: none;
+    font-size: 24px;
+    font-style: italic;
+}
+nav.sticky{
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: aliceblue;
+    top: 0;
+    left: 0;
+}
+
 .page h1{
 font-size: 100px;
 color: aliceblue;

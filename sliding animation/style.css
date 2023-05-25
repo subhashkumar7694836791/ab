@@ -13,6 +13,17 @@ width:100%;
 /* .main{
     overflow: hidden;
 } */
+
+.mouse{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+}
 .section-part1{
    min-height: 100vh;
     width: 100%;

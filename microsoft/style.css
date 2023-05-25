@@ -13,6 +13,20 @@ body {
 #main {
     /* overflow: hidden; */
 }
+.cursor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    position: absolute;
+    z-index: 12;
+    height: 25px;
+    width: 25px;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    border: 2pc solid grey;
+    mix-blend-mode: difference;
+}
 
 #page1 {
     height: 100vh;
@@ -41,9 +55,19 @@ nav {
 }
 
 nav h2 {
+    text-transform: capitalize;
     font-size: 17px;
     font-weight: 100;
+    transition: all ease .5s;
     font-family: 'ivypresto';
+}
+nav a{
+    text-decoration: none;
+}
+nav h2:hover{
+    color: rgb(147, 116, 59);
+    border-bottom: 2px solid rgb(67, 141, 194);
+
 }
 
 nav img {
@@ -63,6 +87,7 @@ nav img {
 }
 
 .nav-right h2 {
+    text-transform: capitalize;
     /* margin-right: 30px; */
     font-size: 17px;
     font-weight: 100;
@@ -81,40 +106,404 @@ nav img {
 }
 
 .slide {
-    display: flex;
     height: 500px;
-    width: 200%;
-    /* display: inline-block; */
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
     white-space: nowrap;
     background-color: lightblue;
 }
+.slide::-webkit-scrollbar{
+    display: none;
+}
 
 .slide1 {
+    position: relative;
+    display: inline-block;
     height: 100%;
     width: 100%;
 background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP4-1399x600);
     background-color: green;
 }
+            
 
- .slide2 {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Slim-Multi-Canvas-AEM-Minecraft-Legends-2023:VP4-1399x600);
-    background-color: lightblue;
-}
-/*
-.slide1 img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    width: 100vw;
-}
+          /* circle moving */
 
-.slide2 img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    width: 100vw;
+
+
+/* .box{
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(190, 198, 190),pink);
 } */
+
+
+.text-slide1{
+    text-transform: capitalize;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 20vh 10vw;
+    height: 81vh;
+    width: 50vw;
+    /* background-color: aqua; */
+}
+.text-slide1 h3{
+    text-transform: capitalize;
+    font-size: 16px;
+    left: 2px;
+    line-height: 24px;
+    font-family: sans-serif;
+    font-weight: 200;
+
+}
+.text-slide1 button:nth-child(1){
+    background-color: rgb(54, 117, 217);
+    color: aliceblue;
+    padding: 10px 14px;
+    font-size: 17px;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.text-slide1 button:nth-child(2){
+    position: relative;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    word-spacing: 2px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.text-slide1 button:nth-child(2)::after{
+    content: '';
+    height: 2px;
+    background-color: aliceblue;
+    width: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 17px;
+    transition: all linear .6s;
+
+}
+.text-slide1 button:nth-child(2):hover::after{
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+
+}
+.slide2 {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-M1-Family-02-1:VP4-1399x600);
+    background-color: green;
+}
+ 
+.slide-icon{
+    width: 13vw;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 1px auto;
+    align-items: center;
+    /* background-color: red; */
+}
+.slide-icon h2{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.slide-icon h2:hover{
+    background-color: black;
+}
+.slide-icon i{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 100;
+}
+.slide-logo{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    padding: 40px 200px;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo .i1{
+   font-size: 50px;
+}
+.logo a{
+    color: rgb(65, 163, 196);
+    font-size: 18px;
+    font-weight: 300;
+}
+.page3{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    padding: 80px 70px;
+    /* margin-top: 80px; */
+    gap: 15px;
+    /* background-color: red; */
+}
+.page31{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+    height: 70vh;
+    width: 23vw;
+    background-color: rgb(249, 250, 251);
+}
+.page31 img{
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.page31 h1{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'inter';
+}
+.page31 h3{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    word-spacing: 3px;
+    line-height: 20px;
+}
+.page31 a{
+    color: rgb(74, 137, 158);
+    text-decoration: none;
+    font-size: 23px;
+}
+.page4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+}
+.page4-box{
+    height: 75vh;
+    width: 90%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Xbox-Series-S-Light-Background:VP4-1260x600);
+    /* background-color: red; */
+}
+.page4-text{
+    height: 460px;
+    width: 400px;
+
+    /* background-color: rebeccapurple; */
+    position: absolute;
+    right: 100px;
+    /* text-align:center; */
+    display: flex;
+    /* align-items:center ; */
+    line-height: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    justify-content: center;
+    flex-direction: column;
+}
+.page4-text h3{
+    font-size: 16px;
+    font-weight: 200;
+}
+.page4-text button{
+    width: 41%;
+    padding: 8px;
+    color: white;
+    font-weight: 800;
+    border: none;
+    font-size: 14px;
+    margin-top: 20px;
+    background-color: cornflowerblue;
+}
+
+.page5{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    padding: 80px 70px;
+    /* margin-top: 80px; */
+    gap: 15px;
+    /* background-color: red; */
+}
+.p5{
+    position: absolute;
+    left: 70px;
+}
+.page51{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+    height: 70vh;
+    width: 23vw;
+    background-color: rgb(249, 250, 251);
+}
+.page51 img{
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.page51 h1{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'inter';
+}
+.page51 h3{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    word-spacing: 3px;
+    line-height: 20px;
+}
+.page51 a{
+    color: rgb(81, 172, 202);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.page6{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+}
+.page6-box{
+    height: 75vh;
+    width: 90%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Microsoft-Sustainability-Report-2023:VP4-1260x600);
+    /* background-color: red; */
+}
+.page6-text{
+    height: 350px;
+    width: 430px;
+background-color: white;
+    display: flex;
+    margin-left: 70px;
+    margin-top: 50px;
+    gap: 20px;
+    /* line-height: 50px; */
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 35px;
+    justify-content: center;
+    flex-direction: column;
+}
+.page6-text h1{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'ivypresto';
+}
+.page6-text h3{
+    font-size: 16px;
+    font-weight: 200;
+}
+.page6-text button{
+    width: 61%;
+    padding: 9px;
+    color: white;
+    font-weight: 800;
+    border: none;
+    font-size: 14px;
+    margin-top: 20px;
+    background-color: rgb(88, 156, 223);
+}
+.media-icon{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.media-icon .left{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 50px;
+    width: 400px;
+    margin-left: 50px;
+    background-color: aliceblue;
+}
+.media-icon .left h1{
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.media-icon .right a{
+    text-decoration: none;
+}
+.media-icon .left i{
+    font-size: 30px;
+}
+.media-icon .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    height: 50px;
+    width: 160px;
+    background-color: rgb(188, 190, 193);
+}
+.media-icon .right h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+.page7{
+    height: 80vh;
+    width: 100%;
+    padding: 50px 50px;
+    display: flex;
+    background-color: lightgray;
+    justify-content: space-around;
+}
+.page7-0{
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 16%;
+}
+.page7-0 a{
+    color: rgb(98, 96, 96);
+    text-decoration: none;
+}

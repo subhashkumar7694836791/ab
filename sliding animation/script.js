@@ -98,3 +98,10 @@ gsap.timeline({
 .to('.title',2,{
     autoAlpha:0
 })
+
+document.querySelector('.section-part1').addEventListener('mousemove',function(dets){
+    var x=dets.offSetWidth;
+    var y=dets.offSetHeight;
+    document.querySelector('.mouse').style.left=`${dets.x }px`;
+    document.querySelector('.mouse').style.top=`${dets.y }px`;
+})
